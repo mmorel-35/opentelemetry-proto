@@ -9,7 +9,7 @@
     }
   ],
   "repository": [
-    "github:mmorel-35/opentelemetry-proto"
+    "github:open-telemetry/opentelemetry-proto"
   ],
   "versions": [],
   "yanked_versions": {}

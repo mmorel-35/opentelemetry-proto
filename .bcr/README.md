@@ -21,7 +21,9 @@ The publish-to-bcr workflow (`.github/workflows/publish-to-bcr.yml`) automates p
 
 ### Prerequisites
 
-1. **Fork the BCR**: Create a fork of [bazelbuild/bazel-central-registry](https://github.com/bazelbuild/bazel-central-registry) in your account (already configured as `mmorel-35/bazel-central-registry`)
+1. **Fork the BCR**: Create a fork of [bazelbuild/bazel-central-registry](https://github.com/bazelbuild/bazel-central-registry) in your account
+   - Currently configured as `mmorel-35/bazel-central-registry` for this fork
+   - When merged upstream, this should be updated to point to the organization's or maintainer's BCR fork
 
 2. **Create a Personal Access Token (PAT)**:
    - Create a Classic PAT with `workflow` and `repo` permissions
