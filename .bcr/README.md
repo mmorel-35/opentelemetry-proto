@@ -13,7 +13,7 @@ Defines the source archive location and format. Placeholders like `{OWNER}`, `{R
 ### presubmit.yml
 Defines the BCR presubmit tests that run when a new version is published. Currently configured to test on:
 - Platforms: debian10, ubuntu2004
-- Bazel versions: 7.x, 8.x, 9.x
+- Bazel versions: 7.x, 8.x, 9.*
 
 ## Publishing Process
 
@@ -21,11 +21,7 @@ The publish-to-bcr workflow (`.github/workflows/publish-to-bcr.yml`) automates p
 
 ### Prerequisites
 
-1. **Fork the BCR**: Create a fork of [bazelbuild/bazel-central-registry](https://github.com/bazelbuild/bazel-central-registry) in your account
-   - Currently configured as `mmorel-35/bazel-central-registry` for this fork
-   - When merged upstream, this should be updated to point to the organization's or maintainer's BCR fork
-
-2. **Create a Personal Access Token (PAT)**:
+**Create a Personal Access Token (PAT)**:
    - Create a Classic PAT with `workflow` and `repo` permissions
    - Add it as a secret named `BCR_PUBLISH_TOKEN` in repository settings
 
